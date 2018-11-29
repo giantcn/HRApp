@@ -1,0 +1,25 @@
+.mui-pages,
+.mui-page			{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #efeff4;
+}
+.mui-pages {
+	top: 46px;
+	height: auto;
+}
+.mui-page.mui-transitioning {
+	-webkit-transition: -webkit-transform 300ms ease;
+	transition: transform 300ms ease;
+}			
+.mui-page {
+	display: none;
+}
+.mui-pages .mui-page {
+	display: block;
+}
