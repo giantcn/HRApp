@@ -1,7 +1,7 @@
 myservice = {};
 
 var mynetwork = false;
-var myservice_url = "http://115.239.250.46:6600/";//"http://172.20.10.2:6660/";//"http://danejiang.tpddns.cn:8445";
+var myservice_url = "http://115.239.250.46:9001/HR/MyApp.ashx";//"http://115.239.250.46:6600/";//"http://172.20.10.2:6660/";//"http://danejiang.tpddns.cn:8445";
 
 myservice.network = function(msg){
 	try{
