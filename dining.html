@@ -15,8 +15,8 @@
 				height: auto;
 			}
 			.mui-anchor {
-				top: 5px;
-				height: 22px;
+				top: 15px;
+				height: auto;
 			}
 			.mui-android {
 				height: 5px;
@@ -34,204 +34,305 @@
 			<a id="logo" target="_blank" class="mui-icon mui-pull-left" style='font-size:14pt;margin-top: 5px;display:none;'>Giant</a>
 			<h1 id="title" class="mui-center mui-title">食堂满意度评分表</h1>
 			<a id="next" class="mui-icon mui-icon-forward mui-pull-right"></a>
-			<span id="page" class="mui-icon mui-pull-right" style='font-size:11pt;margin-top: 5px;'>1/6</span>
+			<span id="page" class="mui-icon mui-pull-right" style='font-size:11pt;margin-top: 5px;'>1/4</span>
 			<a id="previous" class="mui-icon mui-icon-back mui-pull-right" style="display:none"></a>
 		</div>
 		
 		<div id="scroll" class="mui-scroll-wrapper">
-			<div id="info" class="mui-content-padded">		
-				<div class="mui-anchor">你的姓名<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-clear" placeholder="填写真实姓名" id="name" >
-				</div>
-				
-				<div class="mui-anchor">你的性别<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-clear" placeholder="选择性别" id="sex" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">出生日期<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-clear" placeholder="选择日期" id="birth" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">工作年限<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-clear" placeholder="选择工作年限" id="worktime" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">最高学历<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-clear" placeholder="选择最高学历" id="education" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor" style="display:none">婚姻状况：</div>
-				<div class="mui-input-row" style="display:none">
-					<input type="text" class="mui-input-clear" placeholder="选择婚姻状态" id="marry" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">毕业院校<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="school">
-				</div>
-				
-				<div class="mui-anchor">所学专业<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="major">
-				</div>
-				
-				<div class="mui-anchor">毕业时间<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="选择日期" id="schooltime" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">手机号码<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="mobile">
-				</div>
-				
-				<div class="mui-anchor">联系邮箱<span style='color:red;'> *</span>：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="email">
-				</div>
-				
-				<div class="mui-anchor"></div>
-				<div class="mui-anchor"></div>
-				<div class="mui-anchor"></div>
-			</div>
-			
-			<div id="job" class="mui-content-padded">
-				<div class="mui-anchor">意向岗位：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="jobname">
-				</div>
-				
-				<div class="mui-anchor">职业类型：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="选择职业类型" id="jobtype" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">意向城市：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="选择意向城市" id="jobcity" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">入职时间：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="选择可入职时间" id="jobtime" readonly="readonly">
-				</div>
-				
-				<div class="mui-anchor">薪资要求<span style='color:red;'> *</span>：(人民币)</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="选择薪资要求" id="jobprice" readonly="readonly">
-				</div>
-			</div>
-			
-			<div id="work" class="mui-content-padded">
-				<div id="worklist" style="display:none">
+			<div class="mui-content-padded">		
+				<div id="page01" class="mui-anchor">
+					<h4>1.食堂工作人员个人卫生（10分）：</h4>
+					<ul id="page01_01" class="mui-table-view mui-table-view-radio">
+						<li id="page01_01_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page01_01_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page01_01_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page01_01_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page01_01_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
 					<div class="mui-input-row" style="height: auto;">
-						<div class="work"><ul id="worklistview" class="mui-table-view"></ul></div>
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page01_01_remark"></textarea>
 					</div>
-					
-					<div class="mui-anchor"></div>
-					<div class="mui-text-center">
-						<button id="worknew" type="button" class="mui-btn mui-btn-primary">新增</button>
-					</div>
-				</div>
-				
-				<div id="workedit">
-					<div class="mui-anchor">开始时间：</div>
-					<div class="mui-input-row">
-						<input type="text" class="mui-input-range" placeholder="选择开始时间" id="workstart" readonly="readonly">
-					</div>
-					
-					<div class="mui-anchor">结束时间：</div>
-					<div class="mui-input-row">
-						<input type="text" class="mui-input-range" placeholder="选择结束时间" id="workend" readonly="readonly">
-					</div>
-					
-					<div class="mui-anchor">公司名称：</div>
-					<div class="mui-input-row">
-						<input type="text" class="mui-input-range" placeholder="" id="workcompany">
-					</div>
-					
-					<div class="mui-anchor">职位名称：</div>
-					<div class="mui-input-row">
-						<input type="text" class="mui-input-range" placeholder="" id="workjob">
-					</div>
-					
-					<div class="mui-anchor">工作描述：</div>
+	
+					<h4>2.饭菜卫生（10分）：</h4>
+					<ul id="page01_02" class="mui-table-view mui-table-view-radio">
+						<li id="page01_02_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page01_02_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page01_021_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page01_02_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page01_02_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
 					<div class="mui-input-row" style="height: auto;">
-						<textarea rows="5" class="mui-input-range" placeholder="简短描述你的职责范围、工作任务及取得的成绩。" id="workremark"></textarea>
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page01_02_remark"></textarea>
+					</div>
+
+					<h4>3.餐具卫生（5分）：</h4>
+					<ul id="page01_03" class="mui-table-view mui-table-view-radio">
+						<li id="page01_03_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page01_03_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page01_03_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page01_03_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page01_03_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page01_03_remark"></textarea>
+					</div>
+
+					<h4>4.食堂整体环境卫生（10分）：</h4>
+					<ul id="page01_04" class="mui-table-view mui-table-view-radio">
+						<li id="page01_04_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page01_04_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page01_04_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page01_04_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page01_04_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page01_04_remark"></textarea>
 					</div>
 					
-					<div class="mui-text-center">
-						<button id="workdelete" type="button" class="mui-btn mui-btn-primary" style="display:none">删除</button>
-						<button id="worksave" type="button" class="mui-btn mui-btn-primary">保存</button>
-						<button id="workclose" type="button" class="mui-btn mui-btn-primary">关闭</button>
+					<div class="mui-input-row" style="height: 60px;">
+						<a id="next01" class="mui-icon mui-pull-right" style='font-size:11pt;margin-top: 5px;'>下一页</a>
 					</div>
-				</div>
-			</div>
-			
-			<div id="skill" class="mui-content-padded">	
-				<div class="mui-anchor">选择技能特长：</div>
-				<div>
-					<div id="skilllabel" class="skilllabel"></div>
-				</div>
-				
-				<div class="mui-android"></div>
-				<div class="mui-text-center">
-					<button id="skillreset" type="button" class="mui-btn mui-btn-primary">重选</button>
-					<button id="skillsave" type="button" class="mui-btn mui-btn-primary">保存</button>
-				</div>
-				
-				<div class="mui-android"></div>
-				<div class="mui-anchor">自定义：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="skillname">
 				</div>
 
-				<div class="mui-android"></div>
-				<div class="mui-text-center">
-					<button id="skilladd" type="button" class="mui-btn mui-btn-primary">添加</button>
+				<div id="page02" class="mui-anchor">
+					<h4>1.饭菜品种、荤素搭配（10分）：</h4>
+					<ul id="page02_01" class="mui-table-view mui-table-view-radio">
+						<li id="page02_01_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page02_01_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page02_01_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page02_01_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page02_01_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page02_01_remark"></textarea>
+					</div>
+
+					<h4>2.饭菜口味（10分）：</h4>
+					<ul id="page02_02" class="mui-table-view mui-table-view-radio">
+						<li id="page02_02_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page02_02_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page02_02_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page02_02_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page02_02_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page02_02_remark"></textarea>
+					</div>
+
+					<h4>3.饭菜新鲜程度（10分）：</h4>
+					<ul id="page02_03" class="mui-table-view mui-table-view-radio">
+						<li id="page02_03_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page02_03_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page02_03_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page02_03_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page02_03_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page02_03_remark"></textarea>
+					</div>
+
+					<h4>4.饭菜有无异物出现（10分）：</h4>
+					<ul id="page02_04" class="mui-table-view mui-table-view-radio">
+						<li id="page02_04_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page02_04_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page02_04_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page02_04_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page02_04_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page02_04_remark"></textarea>
+					</div>
+					
+					<div class="mui-input-row" style="height: 60px;">
+						<a id="previous02" class="mui-icon mui-pull-left" style='font-size:11pt;margin-top: 5px;'>上一页</a>
+						<a id="next02" class="mui-icon mui-pull-right" style='font-size:11pt;margin-top: 5px;'>下一页</a>
+					</div>
 				</div>
-			</div>
-			
-			<div id="interest" class="mui-content-padded" style="display:none">	
-				<div class="mui-anchor">选择兴趣爱好：</div>
-				<div>
-					<div id="interestlabel" class="interestlabel"></div>
+
+				<div id="page03" class="mui-anchor">
+					<h4>1.服务态度，热情（5分）：</h4>
+					<ul id="page03_01" class="mui-table-view mui-table-view-radio">
+						<li id="page03_01_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page03_01_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page03_01_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page03_01_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page03_01_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page03_01_remark"></textarea>
+					</div>
+
+					<h4>2.饭菜份量恰当，无浪费（5分）：</h4>
+					<ul id="page03_02" class="mui-table-view mui-table-view-radio">
+						<li id="page03_02_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page03_02_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page03_02_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page03_02_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page03_02_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page03_02_remark"></textarea>
+					</div>
+
+					<h4>3.打饭速度，责任心（5分）：</h4>
+					<ul id="page03_03" class="mui-table-view mui-table-view-radio">
+						<li id="page03_03_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page03_03_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page03_03_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page03_03_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page03_03_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page03_03_remark"></textarea>
+					</div>
+					
+					<div class="mui-input-row" style="height: 60px;">
+						<a id="previous03" class="mui-icon mui-pull-left" style='font-size:11pt;margin-top: 5px;'>上一页</a>
+						<a id="next03" class="mui-icon mui-pull-right" style='font-size:11pt;margin-top: 5px;'>下一页</a>
+					</div>
 				</div>
-				
-				<div class="mui-anchor"></div>
-				<div class="mui-text-center">
-					<button id="interestreset" type="button" class="mui-btn mui-btn-primary">重选</button>
-					<button id="interestsave" type="button" class="mui-btn mui-btn-primary">保存</button>
-				</div>
-				
-				<div class="mui-anchor"></div>
-				<div class="mui-anchor">自定义：</div>
-				<div class="mui-input-row">
-					<input type="text" class="mui-input-range" placeholder="" id="interestname">
+	
+				<div id="page04" class="mui-anchor">
+					<h4>1.食堂综合评价（10分）：</h4>
+					<ul id="page04_01" class="mui-table-view mui-table-view-radio">
+						<li id="page04_01_01" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很满意（100%）</a>
+						</li>
+						<li id="page04_01_02" class="mui-table-view-cell">
+							<a class="mui-navigate-right">较满意（80%）</a>
+						</li>
+						<li id="page04_01_03" class="mui-table-view-cell">
+							<a class="mui-navigate-right">一般（60%）</a>
+						</li>
+						<li id="page04_01_04" class="mui-table-view-cell">
+							<a class="mui-navigate-right">不好（40%）</a>
+						</li>
+						<li id="page04_01_05" class="mui-table-view-cell">
+							<a class="mui-navigate-right">很差（20%）</a>
+						</li>
+					</ul>
+					<div class="mui-input-row" style="height: auto;">
+						<textarea rows="2" class="mui-input-range" placeholder="对应问题简述（如有）" id="page04_01_remark"></textarea>
+					</div>
+					
+					<div class="mui-input-row" style="height: 60px;">
+						<a id="previous04" class="mui-icon mui-pull-left" style='font-size:11pt;margin-top: 5px;'>上一页</a>
+					</div>
 				</div>
 
 				<div class="mui-anchor"></div>
-				<div class="mui-text-center">
-					<button id="interestadd" type="button" class="mui-btn mui-btn-primary">添加</button>
-				</div>
-			</div>
-			
-			<div id="person" class="mui-content-padded" style="display:none">
-				<div class="mui-anchor">自我评价：</div>
-				<div class="mui-input-row" style="height: auto;">
-					<textarea rows="10" class="mui-input-range" placeholder="自我评价应突出自身符合目标岗位要求的内容，尽量通过数据及实例来对自身价值进行深化。" id="remark"></textarea>
-				</div>
-			</div>
-			
-			<div id="savemenu" class="mui-content-padded" style="display:none">
-				<div class="mui-anchor"></div>
-				<div class="mui-text-center">
-					<button id="save" type="button" class="mui-btn mui-btn-primary">提交简历</button>
+				<div id="savemenu" class="mui-text-center">
+					<button id="save" type="button" class="mui-btn mui-btn-primary">提交食堂满意度评分表</button>
 				</div>
 			</div>
 		</div>
