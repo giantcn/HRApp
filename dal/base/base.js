@@ -435,7 +435,7 @@ base.ajax = function(url, type, json, fnSucc, fnFaild){
     oAjax.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf-8");
 	
     //3.发送请求  
-    oAjax.send("json="+json+"&Authorization=MyApp_DaneJiang_48F0B130E3A94A878052C2EF445B132A");
+    oAjax.send("method=hr&json="+json+"&Authorization=MyApp_DaneJiang_48F0B130E3A94A878052C2EF445B132A");
       
     //4.接收返回
     oAjax.onreadystatechange = function(){  //OnReadyStateChange事件
